@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f8f8f8;
+  color: #333;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 28px;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.edubit {
+  position: relative;
+  background: #e53935;
+  width: 180px;
+  height: 320px;
+  border-radius: 20px;
+  padding-top: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.led-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.led {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #555;
+  border: 3px solid white;
+  transition: background 0.3s;
+}
+
+.led-label {
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+}
+
+.label {
+  position: absolute;
+  left: 10px;
+  bottom: 20px;
+  font-weight: bold;
+  color: white;
+  transform: rotate(-90deg);
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+.controls {
+  background: #fff;
+  padding: 15px;
+  width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.control-row {
+  margin: 10px 0;
+}
+
+button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #1976d2;
+  color: white;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #0d47a1;
+}
+
+.extra-buttons {
+  margin-top: 20px;
+}

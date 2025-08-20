@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <title>Edubit RGB LED szimulátor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Edubit RGB LED szimulátor</h1>
+
+  <div class="container">
+    <!-- Edubit panel -->
+    <div class="edubit">
+      <div class="led-row">
+        <div class="led" id="led0"></div>
+        <span class="led-label">0</span>
+      </div>
+      <div class="led-row">
+        <div class="led" id="led1"></div>
+        <span class="led-label">1</span>
+      </div>
+      <div class="led-row">
+        <div class="led" id="led2"></div>
+        <span class="led-label">2</span>
+      </div>
+      <div class="led-row">
+        <div class="led" id="led3"></div>
+        <span class="led-label">3</span>
+      </div>
+      <div class="label">RGB</div>
+    </div>
+
+    <!-- Műszerfal -->
+    <div class="controls">
+      <h2>Műszerfal</h2>
+      <div class="control-row">
+        <label for="color0">LED 0 színe:</label>
+        <input type="color" id="color0" value="#ff0000">
+        <button onclick="toggleLed(0)">Ki/Be</button>
+      </div>
+      <div class="control-row">
+        <label for="color1">LED 1 színe:</label>
+        <input type="color" id="color1" value="#00ff00">
+        <button onclick="toggleLed(1)">Ki/Be</button>
+      </div>
+      <div class="control-row">
+        <label for="color2">LED 2 színe:</label>
+        <input type="color" id="color2" value="#0000ff">
+        <button onclick="toggleLed(2)">Ki/Be</button>
+      </div>
+      <div class="control-row">
+        <label for="color3">LED 3 színe:</label>
+        <input type="color" id="color3" value="#ffff00">
+        <button onclick="toggleLed(3)">Ki/Be</button>
+      </div>
+      <div class="extra-buttons">
+        <button onclick="runChase()">Futófény</button>
+        <button onclick="stopChase()">Futófény stop</button>
+        <button onclick="clearAll()">Összes törlése</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
