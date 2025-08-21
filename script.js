@@ -21,7 +21,9 @@ function clearAll() {
     }
 }
 
-function runChase() {
+
+// Futófény 1: oda-vissza
+function runChase1() {
     stopChase();
     let i = 0;
     let direction = 1;
@@ -29,8 +31,9 @@ function runChase() {
     chaseInterval = setInterval(() => {
         clearAll();
 
-        console.log("LED index:", i, "irány:", direction);
-        toggleLed(i)
+        const led = document.getElementById("led" + i);
+        const color = document.getElementById("color" + i).value;
+        led.style.background = color;
 
         i += direction;
         if (i > 3) {
@@ -43,9 +46,24 @@ function runChase() {
     }, 500);
 }
 
+// Futófény 2: körfutás
+function runChase2() {
+    stopChase();
+    let i = 0;
 
+    chaseInterval = setInterval(() => {
+        clearAll();
 
+        const led = document.getElementById("led" + i);
+        const color = document.getElementById("color" + i).value;
+        led.style.background = color;
 
+        i++;
+        if (i > 3) {
+            i = 0;
+        }
+    }, 500);
+}
 
 function stopChase() {
     if (chaseInterval) {
