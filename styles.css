@@ -102,4 +102,15 @@ button:hover {
   .container {
     height: 500px;
   }
-}
+
+  .edubit {
+    height: 200px;
+  }
+
+  .led {
+    height: 30px;
+
+  .control-row {
+      margin: 0 0; 
+    }
+  }
