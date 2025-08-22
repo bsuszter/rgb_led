@@ -99,10 +99,6 @@ button:hover {
 
 /* kisebb képernyő */
 @media (max-width: 860px) {
-  iframe {
-    aspect-ratio: 4/3;
-  }
-
   .container {
     height: 500px;
   }
