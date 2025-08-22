@@ -174,3 +174,26 @@ button:hover {
     padding: 4px 7px;
   }
 }
+
+/* --- Mobilos elrendezés: egymás mellé --- */
+@media (max-width: 500px) {
+  .container {
+    flex-direction: row;     /* egymás mellé */
+    flex-wrap: wrap;         /* ha nem fér ki, le fog törni */
+    justify-content: center; /* középre igazítás */
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .edubit {
+    flex: 0 0 45%;  /* kb. fél képernyőt foglaljon */
+    max-width: 160px;
+    height: auto;   /* magasságot fixen nem változtatjuk, csak engedjük alkalmazkodni */
+  }
+
+  .controls {
+    flex: 1 1 50%;  /* maradék helyet foglalja */
+    min-width: 160px;
+    max-width: 260px;
+  }
+}
