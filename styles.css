@@ -136,44 +136,6 @@ button:hover {
   }
 }
 
-@media (max-width: 500px) {
-  h1 {
-    font-size: 22px;
-  }
-
-  .edubit {
-    width: 120px;
-    height: 220px;
-    padding-top: 15px;
-    gap: 10px;
-    border-radius: 15px;
-  }
-
-  .led {
-    width: 35px;
-    height: 35px;
-  }
-
-  .led-label {
-    font-size: 14px;
-  }
-
-  .label {
-    font-size: 14px;
-    letter-spacing: 1px;
-  }
-
-  .controls {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-  }
-
-  button {
-    font-size: 13px;
-    padding: 4px 7px;
-  }
-}
 
 /* --- Mobilos elrendezés: egymás mellé --- */
 @media (max-width: 500px) {
@@ -191,9 +153,28 @@ button:hover {
     height: auto;   /* magasságot fixen nem változtatjuk, csak engedjük alkalmazkodni */
   }
 
-  .controls {
-    flex: 1 1 50%;  /* maradék helyet foglalja */
-    min-width: 160px;
-    max-width: 260px;
+   h1 {
+    font-size: 22px;
+  }
+
+
+  .led {
+    width: 35px;
+    height: 35px;
+  }
+
+  .led-label {
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
+
+
+  button {
+    font-size: 13px;
+    padding: 4px 7px;
   }
 }
